@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>vitaCMS - <?=$title[$id['com']].' - '.$menu[$id['com']][$id['target']]?></title>
+<script language="JavaScript" type="text/javascript" src="js/jscripts.js"></script>
+<script language="JavaScript" src="editor/scripts/innovaeditor.js"></script>
+<script type="text/javascript" src="editor/scripts/wysiwyg.js"></script>
+<script type="text/javascript" src="editor/scripts/wysiwyg-settings.js"></script>
+<script language="javascript" type="text/javascript" src="datepicket/datepicket.js"></script>
+ <!-- FreeStyle Menu v1.0RC by Angus Turnbull http://www.twinhelix.com -->
+ <script type="text/javascript" src="fsmenu/fsmenu.js"></script>
+
+ <!-- Demo CSS layouts for the list menu. Pick your favourite one and customise! -->
+ <!-- Remove all but one and change "alternate stylesheet" to "stylesheet" to enable -->
+ <link rel="stylesheet" type="text/css" id="listmenu-o" href="fsmenu/listmenu_o.css" title="Vertical 'Office'" />
+
+ <!-- Fallback CSS menu file allows list menu operation when JS is disabled. -->
+ <!-- This is automatically disabled via its ID when the script kicks in. -->
+ <link rel="stylesheet" type="text/css" id="fsmenu-fallback"
+  href="fsmenu/listmenu_fallback.css" />
+
+ <!-- Alternatively, this CSS file is for the second div-based demo menu. -->
+ <link rel="stylesheet" type="text/css" href="fsmenu/divmenu.css" />
+<style type="text/css">
+<!--
+@import url("css/styles.css");
+@import url("datepicket/datepicket.css");
+-->
+</style>
+</head>
+<body>
+<?php if ($id['target'] != 'signin') {?>
+<div id="pages">
+	<div id="frontpages">
+		<div id="front_left">
+			<p>
+				<?php
+					while (list($key,$value) = each($menu)) {
+						echo '<div id="box_l"><div id="box_l_header">&nbsp; '.$title[$key].'</div>';
+						echo '<ul id="menu_l">';
+						while (list($key1,$value1) = each($value)) {
+							if ($key1 == 'signin') {}
+							# Sổ nhóm trong loại
+							else if ($key1 == 'news_categories') {
+								echo '<li style="border-top:3px solid #666666">'.$value1.'<ul>';
+								for($i =0; $i < count($grp);$i++) { 
+									$value2 =$grp[$i];
+									echo '<li><a href="?yuli=com:'.$key.';target:'.$key1.';groups:'.$value2['id'].'">';
+									if ($value2['id'] == $id['groups'] && $id['target'] == 'news_categories') echo '<strong>';
+									echo $value2['title'];
+									if ($value2['id'] == $id['groups'] && $id['target'] == 'news_categories') echo '</strong>';
+									echo '</a></li>';
+								}
+								echo '</ul>';
+							} else if ($key1 == 'news_articles') {
+								//echo '<li>'.$value1.'<ul>';
+								echo '<li style="border-top:3px solid #666666;"><strong>'.$value1.'</strong></li>';
+								for($i =0; $i < count($grp);$i++) { 
+									$value2 =$grp[$i];
+									echo '<li style=" font-weight:bold; background-color:#CCCCCC; height:30px; line-height:30px;">'.$value2['title'].'</li>';
+                                    echo '<li style="margin-top: -1px;">';
+									categories_lilink ('?yuli=com:news;target:news_articles;groups:'.$value2['id'].';category:',$value2['id'],0,$id['category']);
+                                    echo '</li>';
+								}
+								//echo '</ul>';
+							} else if ($key1 == 'signout') {
+									echo '<li><a href="?yuli=com:'.$key.';target:'.$key1.'">'.$value1.'</a> <strong>('.$_SESSION['auth']['name'].')</strong>';
+							} else {
+								 	echo '<li><a href="?yuli=com:'.$key.';target:'.$key1.'">'.$value1.'</a>';
+							}
+							# End sổ nhóm trong loại
+						}
+						echo '</ul>';
+						echo '</div>';
+						echo '<br />';
+					}
+				?>
+			</p>			
+		</div>
+		<div id="front_right">
+		<script language="JavaScript" type="text/javascript" src="js/runfsmenu.js"></script>
+			<div id="front_right_m">
+			<div id="box_l"><div id="box_l_header">&nbsp; <?=$menu[$id['com']][$id['target']]?></div>
+			<div id="site_detail">	 
+<?php }?>

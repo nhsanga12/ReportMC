@@ -1,0 +1,326 @@
+#mainsite {
+	width: 900px;
+	margin: auto;
+}
+#mainsite #header {
+	width: 100%;
+	height: 197px;
+}
+#mainsite #header #banner {
+	width: 100%;
+	height: 170px;
+	background: #ffffff;
+}
+#mainsite #header #menu {
+	width: 100%;
+	height: 27px;
+	background: #f57900;
+}
+.item {
+	height: 25px;
+	margin-top: 0px;
+	padding-top: 2px;
+	list-style: none;
+	margin-left: 10px;
+	padding-left: 10px;
+}
+.item li {
+	list-style: none;
+	float: left;
+}
+.item li.space1 {
+	width: 5px;
+}
+.item li a {
+	background: url(../images/menu_n_l.jpg) no-repeat scroll left top;
+	float:left;
+	height:25px;
+	padding-left:6px;
+	text-decoration:none;
+	cursor: pointer;
+}
+.item li a div {
+	background: url(../images/menu_n_r.jpg) no-repeat scroll right top;
+	display: table;
+	padding-right: 6px;
+	height: 25px;
+}
+.item li a div.s1 {
+	background: url(../images/menu_n_c.jpg) repeat-x top;
+	display: table;
+	padding-left: 6px;
+	color: #fff;
+	height: 25px;
+	width: auto;
+	line-height: 25px;
+}
+.item li a:hover, .item li.active a {
+	background: url(../images/menu_v_l.jpg) no-repeat scroll left top;
+	text-decoration:none;
+}
+.item li a:hover div, .item li.active a div {
+	background: url(../images/menu_v_r.jpg) no-repeat scroll right top;
+	padding-right: 6px;
+}
+.item li a:hover div.s1, .item li.active a div.s1 {
+	background: url(../images/menu_v_c.jpg) repeat-x top;
+	color: #333;
+}
+#line {
+	width: 100%;
+	height: 9px;
+	background: url(../images/bg_header1.jpg) top repeat-x;
+}
+#mainsite #content {
+	width: 898px;
+	display: table;
+	background: #fcfbf8;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+#mainsite #content #left {
+	width: 220px;
+	float: left;
+	border-right: 1px solid #fff;
+	display: table;
+}
+#mainsite #content #left #mod_main {
+	width: 220px;
+}
+#mainsite #content #left #mod_main #topm {
+	width: 200px;
+	height: 23px;
+	line-height: 23px;
+	text-align: left;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #ff7e00;
+	background: url(../images/bg_mod_main.jpg) top repeat-x;
+}
+#mainsite #content #left #mod_main #contm {
+	width: 220px;
+}
+#mainsite #content #left #mod_main #contm1 {
+	width: 220px;
+	background: #f7efe3;
+	color: #666;
+}
+#mainsite #content #left #mod_sub {
+	width: 220px;
+}
+#mainsite #content #left #mod_sub #tops {
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 20px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	background: url(../images/bg_mod_sub.jpg) top repeat-x;
+}
+#mainsite #content #left #mod_sub #conts {
+	width: 210px;
+	padding-left: 10px;
+	line-height: 20px;
+	background: #fcfbf8;
+	color: #666;
+	font-size: 11px;
+}
+#mainsite #content #left #mod_sub #conts a {
+	color: #333;
+	text-decoration: none;
+	font-weight:bold;
+}
+#mainsite #content #left #mod_sub #conts a:hover {
+	color: #FF3300;
+	margin-left: 5px;
+	text-decoration: none;
+}
+#mainsite #content #right {
+	width: 677px;
+	float: left;
+	display: table;
+	color: #333;
+}
+#mainsite #content #right #mod {
+	width: 677px;
+}	
+#mainsite #content #right #mod #top {
+	width: 667px;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 12px;
+	color: #fff;
+	background: url(../images/bg_mod_sub.jpg) top repeat-x;
+}
+#mainsite #content #right #mod #cont {
+	width: 657px;
+	padding: 10px;
+	color: #666;
+	display: table;
+}
+#mainsite #content #right #mod1 {
+	width: 677px;
+}	
+#mainsite #content #right #mod1 #top1 {
+	width: 667px;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 10px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #FF6600;
+	background: #f0f0f0;
+}
+#mainsite #content #right #mod1 #cont1 {
+	width: 657px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	background: #fcfbf8;
+	color: #666;
+	display: table;
+}
+#mainsite #footer {
+	width: 898px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	height: 60px;	
+}
+#mainsite #footer #menubot {
+	width: 100%;
+	height: 29px;
+	line-height: 29px;
+	text-align: center;
+	background: #ff7e00;
+}
+#mainsite #footer #menubot a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+}
+#mainsite #footer #menubot a:hover {
+	color: #eee;
+	font-weight: bold;
+	text-decoration: none;
+}
+#mainsite #footer #copyright {
+	width: 100%;
+	display: table;
+	line-height: 25px;
+	text-align: center;
+	background: #ffab60;
+	color: #111;
+}
+.title1 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #ff7e00;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+.title_i {
+	font-size: 11px;
+	font-weight: bold;
+}
+.title_i a {
+	text-decoration: none;
+	color: #666;
+}
+.title_i a:hover {
+	text-decoration: none;
+	color: #222;
+}
+
+/*contact*/
+#rs_line {
+	display:table;
+	width:98%;
+	margin:auto;
+	margin-bottom: 5px;
+}
+#rs_line_l {
+	float:left;
+	width:25%;
+	text-align:right;
+	line-height:22px;
+	font-size: 12px;
+}
+#rs_line_l p {
+	font-size:10px;
+	font-style:italic;
+	display:table;
+}
+#rs_line_r {
+	float:right;
+	width:73%;
+	margin-right:1%;
+	line-height:22px;
+}
+#showdetail {
+	z-index: 101;
+	position:absolute;
+	top:0px;
+	left:0px;
+	display:none; 
+}
+#showdetailbg {
+	z-index: 100;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background-color:#000;
+	display:none;	
+}
+#checkdomainbox {
+	z-index: 102;
+	width:800px;
+	display: table;
+	border:5px solid #FF6600;
+	background: #fff;
+}
+#checkdomainboxdetail {
+	margin:0px;
+	padding:10px;
+}
+#checkdomainboxtitle {
+	width:80%;
+	font-size:20px;
+	font-weight:bold;
+	color:#FF3300;
+	float:left;
+}
+#checkdomainboxclose {
+	width:10%;
+	display:block;
+	float:right;
+	text-align:right;
+}
+#checkdomaincontent {
+	width:100%;
+	display:table;
+	color:#333333;
+}
+#checkdomainpicture {
+	width:410px;
+	display:table;
+	float:left;
+	text-align:left;
+	padding: 10px 5px 5px 5px; 
+}
+#checkdomaincont {
+	width:420px;
+	display:table;
+	float:left;
+	text-align:justify;
+	font-size: 12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#0d69b7;
+	padding: 5px;	
+}

@@ -1,0 +1,217 @@
+body {
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#333333;
+	background: url(../images/bg.gif);
+}
+p {
+	margin:5px;
+}
+form {
+	margin:0px;
+}
+a {
+	color:#003399;
+	text-decoration:none;
+}
+a:hover {
+	color:#333333;
+	text-decoration:underline;	
+}
+#red {
+	color:red;
+}
+input {
+	font-size:12px;
+	font-weight:bold;
+	color:#1B698F;
+}
+select {
+	font-size:12px;
+}
+#pages {
+	width:99%;
+	margin:auto;
+	display:table;
+	margin-top:10px;
+	border:1px solid #CCCCCC;
+	background:#FFFFFF;
+}
+#frontpages {
+	width:100%;
+	margin:0px;
+	display:table;
+ }
+#front_left {
+	width:18%;
+	float:left;
+	display:block;
+}
+#front_right {
+	width:82%;
+	float:right;
+	display:block;
+}
+#front_right_m {
+	padding:5px;
+	text-align:left;
+}
+#copyright {
+	margin:auto;
+	width:100%;
+	text-align:center;
+	margin-top:20px;
+	font-size:9px;
+	color:#999999;
+}
+#alert_box {
+	margin:auto;
+	border:1px solid #999999;
+	width:400px;
+	padding:1px;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+#alert_header {
+	width:100%;
+	line-height:30px;
+	color:#FFFFFF;
+	background:#699;
+	font-weight:bold;
+}
+#alert_detail {
+	padding:20px;
+	display:table;
+}
+#login_left {
+	width:45%;
+	text-align:right;
+	float:left;
+	line-height:22px;
+	display:block;
+}
+#login_right {
+	width:50%;
+	float:right;
+	line-height:22px;
+	display:block;
+	text-align:left;
+}
+#menu_l {
+	margin:0px;
+	line-height:22px;
+	font-size:12px;
+}
+ul {
+	margin:0px;
+	padding:0px;
+}
+#menu_l ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	line-height:22px;
+}
+#menu_l li {
+	margin:0px;
+	list-style:none;
+	line-height:22px;
+	padding-left:10px;
+	font-weight:normal;
+}
+#menu_l ul ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+}
+#menu_l li li {
+	margin:0px;
+	list-style:none;
+	line-height:22px;
+	padding-left:0px;
+	font-weight:normal;
+}
+#menu_l strong {
+	color:#FF0000;
+	line-height:22px;
+}
+#menu_l a {
+	line-height:22px;
+}
+#box_l{
+	margin:auto;
+	border:1px solid #CCCCCC;
+	margin-left:3px;
+	padding:1px;
+}
+#box_l_header {
+	width:100%;
+	line-height:30px;
+	color:#FFFFFF;
+	background:#669999;
+	font-weight:bold;
+}
+#site_detail {
+	display:table;
+	width:99%;
+	margin-left:1%;
+}
+#rs_line_h {
+	display:table;
+	width:99%;
+	margin:auto;
+	margin-bottom:10px;
+	margin-top:10px;
+	margin-right:1%;
+}
+#rs_line_h_l {
+	float:left;
+	width:65%;
+}
+#rs_line_h_r {
+	float:right;
+	width:34%;
+	text-align:right;
+	background:url(../images/arrow_turn.png) bottom right no-repeat;
+}
+#rs_line {
+	display:table;
+	width:100%;
+	margin:auto;
+}
+#rs_line_l {
+	float:left;
+	width:26%;
+	text-align:right;
+	line-height:22px;
+	border-bottom:1px dotted #CCCCCC;
+}
+#rs_line_l p {
+	font-size:10px;
+	font-style:italic;
+	display:table;
+}
+#rs_line_r {
+	float:right;
+	width:70%;
+	margin-right:1%;
+	line-height:22px;
+}
+#rs_header {
+	font-weight:bold;
+	float:left;
+	border-bottom:1px solid #CCCCCC;
+	border-right:1px solid #FFFFFF;
+	margin-bottom:2px;
+	line-height:22px;
+	height:22px;
+}
+#rs_detail {
+	float:left;
+	border-bottom:1px dotted #CCCCCC;
+	border-right:1px solid #FFFFFF;
+	margin-bottom:2px;
+	line-height:22px;
+	height:22px;
+}

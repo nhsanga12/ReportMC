@@ -1,0 +1,72 @@
+body {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#333;
+	margin:0px;
+}
+a {
+	text-decoration:none;
+	color:#666;
+}
+a:hover {
+	text-decoration:underline;
+	color:#666;
+}
+.blue {
+	color:#16498b;
+}
+.yellow {
+	color:#fff000;
+}
+.red {
+	color:#f00;
+}
+input {
+	font-size:10px;
+}
+select {
+	font-size:10px;
+}
+fieldset {
+	border:1px solid #ccc;
+	margin:0px;
+	padding:5px;
+}
+#envreport {
+	border:0px solid #333;
+	background-color:#ffc;
+	display:table;
+	width:100%;
+}
+#envreport_title {
+	font-weight:bold;
+	font-size:13px;
+	line-height:30px;
+	padding-left:10px;
+	background-color:#ccc;
+}
+#envreport_title span {
+	margin-left:180px;
+	line-height:30px;
+}
+#envreport_detail {
+	width:100%;
+	overflow-x:auto;
+	overflow-y:auto;	
+}
+#envreport_detail div {
+	margin:10px;
+	display:table;
+}
+#envreport p {
+	display:table;
+}
+#alertnofile {
+	border:1px solid #333;
+	background-color:#FFFFCC;
+	color:#333333;
+	margin:10px;
+	left:0px;
+	padding:20px;
+	display:table;
+}

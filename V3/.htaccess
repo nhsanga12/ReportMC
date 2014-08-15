@@ -1,0 +1,3 @@
+RewriteEngine on
+RewriteRule sitemap\.html sitemap\.html [L]
+RewriteRule ^(.*)\.html index\.php [L]
